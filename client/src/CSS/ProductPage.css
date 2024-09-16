@@ -1,0 +1,223 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+    box-sizing: border-box; /* Ensures padding and border are included in element's width/height */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+* {
+    box-sizing: inherit; /* Apply box-sizing: border-box to all elements */
+}
+
+.ProductPage-main-div {
+    width: 100vw;
+    min-height: 100vh; /* Ensure it takes up full height */
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent x-axis overflow */
+}
+
+.ProductPage-Search-div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.ProductPage-Search-div div {
+    display: flex;
+    flex-direction: row;
+    background-color: #d5d1d1;
+    border: none;
+    width: 40%;
+    height: 6vh;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    gap: 1%;
+    position: absolute;
+}
+
+.ProductPage-Search-div input {
+    width: 90%;
+    height: 80%;
+    border: none;
+    background-color: #d5d1d1;
+    font-size: larger;
+    color: #002d40;
+}
+.ProductPage-Search-div input:focus {
+    outline: none;
+    border: none;
+}
+
+.ProductPage-Search-div input::placeholder {
+    color: #002d40;
+}
+
+.product-search-icon {
+    font-size: 30px;
+}
+
+.ProductPage-content-text-div {
+    display: flex;
+    font-size: 3vw; /* Responsive font size */
+    font-weight: 600;
+    width: 100%;
+    height: 10vh;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5% 0; /* Adjusted margins to prevent overflow */
+    padding: 0;
+}
+
+.ProductPage-content-item-div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Default: 4 columns */
+    gap: 2%; /* Adjust gap for better spacing */
+    width: 100%; /* Set to 100% to ensure it doesn't overflow */
+    padding: 0 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Adjust grid layout for different screen sizes */
+@media (max-width: 1500px) {
+    .ProductPage-content-item-div {
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    }
+}
+
+@media (max-width: 1200px) {
+    .ProductPage-content-item-div {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
+    .ProductPage-Search-div div {
+        width: 50%;
+    }
+    
+    .ProductPage-Search-div input {
+        width: 90%;
+        height: 70%;
+        
+    }
+}
+
+@media (max-width: 800px) {
+    .ProductPage-Search-div div {
+        width: 70%;
+    }
+    
+    .ProductPage-Search-div input {
+        width: 80%;
+        height: 70%;
+    }
+}
+
+@media (max-width: 750px) {
+    .ProductPage-content-text-div{
+        padding-top: 1.5%;
+        font-size: 20px;
+
+    }
+    .ProductPage-content-button-div {
+        margin-top: 10%; /* Add space to move the button down */
+    }
+
+    .ProductPage-button {
+        font-size: 20px;
+        width: 20vh;
+        height: 6vh;
+        position: static; /* Reset position for small screens */
+        margin-top: 130px; /* Add margin to push button down */
+    }
+    
+}
+
+@media (max-width: 630px) {
+    .ProductPage-content-item-div {
+        grid-template-columns: 1fr; /* 1 column */
+    }
+    
+}
+
+.item {
+    height: auto; /* Let content dictate height */
+    background-color: black;
+    border-radius: 20px;
+    color: #FFFFFF;
+    padding: 0;
+}
+
+.ProductPage-item-image-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+.ProductPage-item-image {
+    width: 90%;
+    height: auto; /* Adjust height to avoid stretching */
+    object-fit: cover;
+    padding: 5% 0 0 0;
+    margin: 0;
+    cursor: pointer;
+}
+
+.ProductPage-item-details-div {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 0; /* Add padding to avoid cramped details */
+}
+
+.ProductPage-item-details-StarReview-div,
+.ProductPage-item-details-Quantity-div,
+.ProductPage-item-details-button-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 10%;
+    gap: 3%;
+    height: auto;
+}
+
+.ProductPage-item-details-itemName-div {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10%;
+    height: auto;
+}
+
+.ProductPage-item-details-button-div button {
+    width: 40%;
+    height: 5vh;
+    border-radius: 15px;
+    border: none;
+}
+
+.ProductPage-content-button-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 2% 0;
+}
+
+.ProductPage-button {
+    color: #FFFFFF;
+    background-color: #002d40;
+    height: 7vh;
+    width: 30vh;
+    font-size: 2vw;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    position: inherit;
+}

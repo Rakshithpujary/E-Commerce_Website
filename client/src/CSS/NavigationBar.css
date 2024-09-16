@@ -1,0 +1,69 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5;
+}
+
+.NavigationBar-div {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 10vh;
+    background-color: #002D40;
+    font-size: larger;
+    color: #FFFFFF;
+    font-weight: bolder;
+    margin: 0%;
+    padding: 0;
+    z-index: 9;
+}
+
+.NavigationBar-first-div {
+    padding: 0 0 0 1%;
+}
+
+.NavigationBar-middle-div {
+    display: flex;
+    gap: 7%;
+    text-decoration: none;
+}
+
+.NavigationBar-last-div {
+    display: flex;
+    padding: 0 1% 0 0;
+    font-size: 30px;
+    gap: 10%;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 35px;
+    cursor: pointer;
+    padding-right: 10px;
+}
+
+@media (max-width: 625px) {
+    .NavigationBar-middle-div {
+        display: none;
+        flex-direction: column;
+        background-color: #002D40;
+        position: absolute;
+        top: 10vh;
+        left: 0;
+        width: 100%;
+        height: auto;
+        gap: 2%;
+        font-size: 35px;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .NavigationBar-div.active .NavigationBar-middle-div {
+        display: flex;
+    }
+}
