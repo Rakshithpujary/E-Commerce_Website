@@ -1,5 +1,5 @@
 import React from "react";
-import '../CSS/ProductPage.css'
+import '../CSS/ProductComponent.css'
 import { FaStar } from "react-icons/fa";
 import { FcSearch } from "react-icons/fc";
 
