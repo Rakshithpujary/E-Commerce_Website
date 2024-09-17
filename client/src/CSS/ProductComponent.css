@@ -31,7 +31,7 @@ body, html {
 .ProductPage-Search-div div {
     display: flex;
     flex-direction: row;
-    background-color: #d5d1d1;
+    background-color: #E9C46A;
     border: none;
     width: 40%;
     height: 6vh;
@@ -46,9 +46,9 @@ body, html {
     width: 90%;
     height: 80%;
     border: none;
-    background-color: #d5d1d1;
+    background-color: #E9C46A;
     font-size: larger;
-    color: #002d40;
+    color: #0077B6;
 }
 .ProductPage-Search-div input:focus {
     outline: none;
@@ -56,7 +56,7 @@ body, html {
 }
 
 .ProductPage-Search-div input::placeholder {
-    color: #002d40;
+    color: #0077B6;
 }
 
 .product-search-icon {
@@ -203,6 +203,10 @@ body, html {
     color: #FFFFFF; /* White */
 }
 
+.ProductPage-item-details-div button:hover {
+    background-color: #0077B6; /* Darker Ocean Blue on hover */
+}
+
 .ProductPage-content-button-div {
     width: 100%;
     display: flex;
@@ -213,7 +217,7 @@ body, html {
 }
 
 .ProductPage-button {
-    background-color: #005377; /* Ocean Blue */
+    background-color: #FF6F61; /* Coral Orange for Load more button */
     color: #FFFFFF; /* White */
     height: 7vh;
     width: 30vh;
