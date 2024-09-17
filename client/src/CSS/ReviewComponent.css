@@ -25,7 +25,8 @@
   padding: 20px;
   min-width: 98vw; /* Full screen width for each review */
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  background-color: #002d40;
+  background-color: #d5d5d5; /* Soft background */
+  color: #005377; /* Ocean Blue */
   border-radius: 10px;
   margin: 0 10px;
   text-align: center;
@@ -56,7 +57,7 @@
 
 p {
   font-size: 1rem;
-  color: white;
+  color: #005377;
   margin: 0;
 }
 

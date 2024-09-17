@@ -34,6 +34,7 @@ body, html {
     position: absolute;
     display: flex;
     flex-direction: column;
+    align-items:start;
     color: #FFFFFF;
     z-index: 1;
     top: 25%;
@@ -54,8 +55,8 @@ body, html {
 }
 
 .homepage-bottom-button {
-    background-color: #002d40;
-    color: #FFFFFF;
+    background-color: #FF7F50; /* Coral Orange */
+    color: #FFFFFF; 
     width: 20vw;
     height: 7vh;
     border-radius: 30px;
@@ -107,7 +108,7 @@ body, html {
 
     .homepage-bottom-button {
         width: 50vw;
-        height: 10vh;
+        height: 7vh;
         font-size: 4vw;
     }
 }

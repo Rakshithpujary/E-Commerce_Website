@@ -147,9 +147,9 @@ body, html {
 
 .item {
     height: auto; /* Let content dictate height */
-    background-color: black;
+     background-color: #2E8B57; /* Sea Green */
     border-radius: 20px;
-    color: #FFFFFF;
+    color: #FFFFFF; /* White */
     padding: 0;
 }
 
@@ -199,6 +199,8 @@ body, html {
     height: 5vh;
     border-radius: 15px;
     border: none;
+    background-color: #FF7F50; /* Coral Orange */
+    color: #FFFFFF; /* White */
 }
 
 .ProductPage-content-button-div {
@@ -211,8 +213,8 @@ body, html {
 }
 
 .ProductPage-button {
-    color: #FFFFFF;
-    background-color: #002d40;
+    background-color: #005377; /* Ocean Blue */
+    color: #FFFFFF; /* White */
     height: 7vh;
     width: 30vh;
     font-size: 2vw;
