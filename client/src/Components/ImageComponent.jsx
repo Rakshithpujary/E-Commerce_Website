@@ -4,7 +4,7 @@ import { RiArrowRightLine } from "react-icons/ri";
 
 const ImageComponent = () => {
     return(
-        <div className="main-div">
+        <div id="Image-section" className="main-div">
             <div className="homePage-image-div">
                 <img src="Assets/pic.jpg" alt="Fishing scenery" className="homePage-bottom-image" />
             </div>

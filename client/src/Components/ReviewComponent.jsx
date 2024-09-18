@@ -39,7 +39,7 @@ const ReviewComponent = () => {
   };
 
   return (
-    <div className="carousel">
+    <div id='Review-section' className="carousel">
       <div
         className="carousel-track"
         style={{ transform: `translateX(-${currentSlide * 100}%)` }}

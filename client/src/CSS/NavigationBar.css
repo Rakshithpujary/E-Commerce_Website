@@ -39,6 +39,7 @@ body, html {
 }
 
 .NavigationBar-middle-div a {
+    text-decoration: none;
     color: #F5F5F5; /* White */
 }
 

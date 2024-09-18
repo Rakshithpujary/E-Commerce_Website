@@ -15,10 +15,10 @@ const NavigationBar = () => {
         <div className={`NavigationBar-div ${menuOpen ? "active" : ""}`}>
             <div className="NavigationBar-first-div">logo</div>
             <div className="NavigationBar-middle-div">
-                <a href="#">Home</a>
-                <a href="../Components/ProductComponent.jsx">Product</a>
+                <a href="#Image-section">Home</a>
+                <a href="#products-section">Product</a>
                 <a href="#">Contact</a>
-                <a href="#">Review</a>
+                <a href="#Review-section">Review</a>
             </div>
             <div className="NavigationBar-last-div">
                 <IoMdSearch />

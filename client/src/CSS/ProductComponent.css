@@ -2,22 +2,22 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: #F5F5F5;
-    box-sizing: border-box; /* Ensures padding and border are included in element's width/height */
-    overflow-x: hidden; /* Prevent horizontal overflow */
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 * {
-    box-sizing: inherit; /* Apply box-sizing: border-box to all elements */
+    box-sizing: inherit;
 }
 
 .ProductPage-main-div {
     width: 100vw;
-    min-height: 100vh; /* Ensure it takes up full height */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent x-axis overflow */
+    overflow-x: hidden;
 }
 
 .ProductPage-Search-div {
@@ -65,21 +65,21 @@ body, html {
 
 .ProductPage-content-text-div {
     display: flex;
-    font-size: 3vw; /* Responsive font size */
+    font-size: 3vw;
     font-weight: 600;
     width: 100%;
     height: 10vh;
     justify-content: center;
     align-items: center;
-    margin: 1.5% 0; /* Adjusted margins to prevent overflow */
+    margin: 1.5% 0;
     padding: 0;
 }
 
 .ProductPage-content-item-div {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* Default: 4 columns */
-    gap: 2%; /* Adjust gap for better spacing */
-    width: 100%; /* Set to 100% to ensure it doesn't overflow */
+    gap: 2%;
+    width: 100%;
     padding: 0 5%;
     justify-content: space-between;
     align-items: center;
@@ -103,7 +103,6 @@ body, html {
     .ProductPage-Search-div input {
         width: 90%;
         height: 70%;
-        
     }
 }
 
@@ -122,34 +121,44 @@ body, html {
     .ProductPage-content-text-div{
         padding-top: 1.5%;
         font-size: 20px;
-
     }
     .ProductPage-content-button-div {
-        margin-top: 10%; /* Add space to move the button down */
+        margin-top: 10%;
     }
 
     .ProductPage-button {
         font-size: 20px;
         width: 20vh;
         height: 6vh;
-        position: static; /* Reset position for small screens */
-        margin-top: 130px; /* Add margin to push button down */
+        margin-top: 130px;
     }
-    
 }
 
 @media (max-width: 630px) {
     .ProductPage-content-item-div {
-        grid-template-columns: 1fr; /* 1 column */
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for small screens */
     }
-    
+    .ProductPage-item-image {
+        width: 90%;
+        height: 15vh;
+    }
+    .ProductPage-item-details-StarReview-div{
+        font-size: 12px;
+        gap: 2%;
+    }
+}
+
+@media (max-width: 400px) {
+    .ProductPage-content-item-div {
+        grid-template-columns: 1fr; /* 1 column for very small screens */
+    }
 }
 
 .item {
-    height: auto; /* Let content dictate height */
-     background-color: #2E8B57; /* Sea Green */
+    height: auto;
+    background-color: #2E8B57;
     border-radius: 20px;
-    color: #FFFFFF; /* White */
+    color: #FFFFFF;
     padding: 0;
 }
 
@@ -163,7 +172,7 @@ body, html {
 
 .ProductPage-item-image {
     width: 90%;
-    height: auto; /* Adjust height to avoid stretching */
+    height: auto;
     object-fit: cover;
     padding: 5% 0 0 0;
     margin: 0;
@@ -173,7 +182,7 @@ body, html {
 .ProductPage-item-details-div {
     display: flex;
     flex-direction: column;
-    padding: 5% 0; /* Add padding to avoid cramped details */
+    padding: 5% 0;
 }
 
 .ProductPage-item-details-StarReview-div,
@@ -185,6 +194,12 @@ body, html {
     padding: 0 10%;
     gap: 3%;
     height: auto;
+}
+
+.ProductPage-item-details-Quantity-div h4{
+    padding: 0%;
+    margin: 0%;
+
 }
 
 .ProductPage-item-details-itemName-div {
@@ -199,12 +214,12 @@ body, html {
     height: 5vh;
     border-radius: 15px;
     border: none;
-    background-color: #FF7F50; /* Coral Orange */
-    color: #FFFFFF; /* White */
+    background-color: #FF7F50;
+    color: #FFFFFF;
 }
 
 .ProductPage-item-details-div button:hover {
-    background-color: #0077B6; /* Darker Ocean Blue on hover */
+    background-color: #0077B6;
 }
 
 .ProductPage-content-button-div {
@@ -217,13 +232,12 @@ body, html {
 }
 
 .ProductPage-button {
-    background-color: #FF6F61; /* Coral Orange for Load more button */
-    color: #FFFFFF; /* White */
+    background-color: #FF6F61;
+    color: #FFFFFF;
     height: 7vh;
     width: 30vh;
     font-size: 2vw;
     border-radius: 10px;
     border: none;
     cursor: pointer;
-    position: inherit;
 }
