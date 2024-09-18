@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import { useLocation } from "react-router-dom";
 import '../CSS/BuyPage.css'; // Ensure the CSS file is imported
 import { FaStar } from "react-icons/fa";
+import { TiShoppingCart } from "react-icons/ti";
+import { HiOutlineCurrencyDollar } from "react-icons/hi";
 
 const BuyPage = () => {
     const location = useLocation(); // Retrieve the state passed from the ProductComponent
@@ -70,8 +72,8 @@ const BuyPage = () => {
                             />
                         </div>
                         <div className="BuyPage-buttons">
-                            <button onClick={handleAddToCart}>Add to Cart</button>
-                            <button onClick={handleBuyNow}>Buy Now</button>
+                            <button onClick={handleAddToCart}><TiShoppingCart />Add to Cart</button>
+                            <button onClick={handleBuyNow}><HiOutlineCurrencyDollar />Buy Now</button>
                         </div>
                     </div>
                 </div>
